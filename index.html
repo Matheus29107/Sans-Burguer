@@ -1,0 +1,859 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>San's Burguer</title>
+
+    <meta name="description"
+        content="San's Burguer - Hambúrguer artesanal em Contagem.">
+    <link rel="stylesheet" href="index.css">
+</head>
+
+
+<body>
+
+
+    <!-- =========================
+         MENU
+    ========================== -->
+
+    <header>
+
+        <div class="nav">
+
+            <!-- LOGO -->
+            <a href="#inicio">
+
+                <img
+                    class="logo"
+                    src="imagens/logo.png"
+                    alt="Logo San's Burguer"
+                >
+
+            </a>
+
+
+            <!-- BOTÃO DO CELULAR -->
+
+            <button
+                class="menu-toggle"
+                onclick="toggleMenu()"
+                aria-label="Abrir menu"
+            >
+                ☰
+            </button>
+
+
+            <!-- LINKS -->
+
+            <nav id="mainNav">
+
+                <a href="#inicio">
+                    Início
+                </a>
+
+                <a href="#cardapio">
+                    Cardápio
+                </a>
+
+                <a href="#sobre">
+                    Sobre
+                </a>
+
+                <a href="#localizacao">
+                    Localização
+                </a>
+
+                <!--
+                    TROQUE PELO LINK REAL DO IFOOD
+                -->
+
+                <a
+                    href="https://www.ifood.com.br/delivery/contagem-mg/sans-burguer-novo-progresso/b02c2a17-d339-4091-98d1-19aa1efa1d4a" target="_blank"
+                    target="_blank"
+                    class="order"
+                >
+                    Pedir agora
+                </a>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+
+
+    <main>
+
+
+        <!-- =========================
+             INÍCIO
+        ========================== -->
+
+        <section
+            class="hero"
+            id="inicio"
+        >
+
+            <div class="hero-inner">
+
+                <span class="badge">
+                  HAMBÚRGUER ARTESANAL
+                </span>
+
+
+                <h1>
+                    O sabor que
+                    <span>
+                        você merece.
+                    </span>
+                </h1>
+
+
+                <p>
+                    Hambúrguer artesanal preparado
+                    com capricho e aquele sabor
+                    que dá vontade de pedir de novo.
+                </p>
+
+
+                <div class="buttons">
+
+                    <a
+                        href="https://www.ifood.com.br/delivery/contagem-mg/sans-burguer-novo-progresso/b02c2a17-d339-4091-98d1-19aa1efa1d4a" target="_blank"
+                        target="_blank"
+                        class="btn btn-yellow"
+                    >
+                         Peça agora
+                    </a>
+
+
+                    <a
+                        href="#cardapio"
+                        class="btn btn-outline"
+                    >
+                        Ver cardápio
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================
+             CARDÁPIO
+        ========================== -->
+
+        <section id="cardapio">
+
+            <div class="container">
+
+                <div class="section-title">
+
+                    <small>
+                        NOSSO CARDÁPIO
+                    </small>
+
+                    <h2>
+                        Escolha seu favorito
+                    </h2>
+
+                </div>
+
+
+
+                <div class="menu-grid">
+
+
+                    <!-- HAMBÚRGUER 1 -->
+               <a href="https://www.ifood.com.br/delivery/contagem-mg/sans-burguer-novo-progresso/b02c2a17-d339-4091-98d1-19aa1efa1d4a?prato=7f2a30a9-e1ac-4e7a-ba21-d6340bd5dcc9" target="_blank"
+                    <article class="card">
+
+                        <img
+                            src="imagens/1burguer.jpg"
+                            alt="Double Steak - Biggest"
+                        >
+
+                        <div class="card-body">
+                              <h3>
+                                Double Steak - Biggest
+                              </h3>
+                            <p>
+                                Pão com gergelim, 2 hambúrgueres bovinos sabor picanha de 120g, duplo queijo cheddar, bacon em dobro, Catupiry, alface, tomate, molho barbecue e molho especial. Acompanha uma porção de batata chips (aproximadamente 60gr).
+                            </p>
+
+                            <div class="price">
+                                R$ 49,90
+                            </div>
+
+                        </div>
+
+                    </article>
+                </a>
+
+
+                    <!-- HAMBÚRGUER 2 -->
+                <a href="https://www.ifood.com.br/delivery/contagem-mg/sans-burguer-novo-progresso/b02c2a17-d339-4091-98d1-19aa1efa1d4a?prato=18fc3c81-56c7-4802-996b-c27e095881dc" target="_blank"
+                    <article class="card">
+
+                        <img
+                            src="imagens/2burguer.avif"
+                            alt="Alho poró - Mid"
+                        >
+
+                        <div class="card-body">
+
+                            <h3>
+                                Alho poró - Mid
+                            </h3>
+
+                            <p>
+                                Pão com gergelim, hambúrguer bovino sabor picanha de 120gr, queijo cheddar, bacon, alho poró, alface, tomate, Catupiry e molho especial. Acompanha uma porção de batata chips (aproximadamente 60gr).
+                            </p>
+
+                            <div class="price">
+                                R$ 38,90
+                            </div>
+
+                        </div>
+
+                    </article>
+                </a>
+
+
+                    <!-- HAMBÚRGUER 3 -->
+                <a href="https://www.ifood.com.br/delivery/contagem-mg/sans-burguer-novo-progresso/b02c2a17-d339-4091-98d1-19aa1efa1d4a?prato=6e458488-02d5-4742-896b-696774f753ae" target="_blank"
+                    <article class="card">
+
+                        <img
+                            src="imagens/3burguer.jpg"
+                            alt="File mingnon - Mid"
+                        >
+
+                        <div class="card-body">
+
+                            <h3>
+                                File mingnon - Mid
+                            </h3>
+
+                            <p>
+                                Pão com gergelim, filé mingnon empanado (aproximadamente 100gr), queijo cheddar, bacon, alface, tomate, molho verde e molho especial. Acompanha uma porção de batata chips (aproximadamente 60gr).
+                            </p>
+
+                            <div class="price">
+                                R$ 50,90
+                            </div>
+
+                        </div>
+
+                    </article>
+                </a>
+
+
+
+
+
+
+                <a href="https://www.ifood.com.br/delivery/contagem-mg/sans-burguer-novo-progresso/b02c2a17-d339-4091-98d1-19aa1efa1d4a?prato=a1356f40-f936-4c46-b3b4-e55d02f2e88e" target="_blank"
+                    <article class="card">
+
+                        <img
+                            src="imagens/4burguer.jpg"
+                            alt="Picles - Mid"
+                        >
+
+                        <div class="card-body">
+
+                            <h3>
+                                Picles - Mid
+                            </h3>
+
+                            <p>
+                                Pão com gergelim, hambúrguer bovino sabor picanha de 120gr, queijo cheddar, bacon, picles, alface, tomate, molho jalapeno, barbecue e molho especial. Acompanha uma porção de batata chips (aproximadamente 60gr).
+                            </p>
+
+                            <div class="price">
+                                R$ 39,90
+                            </div>
+
+                        </div>
+
+                    </article>
+                </a>
+
+
+
+
+
+                <a href="https://www.ifood.com.br/delivery/contagem-mg/sans-burguer-novo-progresso/b02c2a17-d339-4091-98d1-19aa1efa1d4a?prato=0332b41f-2def-48f9-9088-8200c3cc5dd4" target="_blank"
+                    <article class="card">
+
+                        <img
+                            src="imagens/5burguer.avif"
+                            alt="Onion Rings - Mid"
+                        >
+
+                        <div class="card-body">
+
+                            <h3>
+                                Onion Rings - Mid
+                            </h3>
+
+                            <p>
+                                Pão com gergelim, hambúrguer bovino sabor picanha de 120gr, onion rings, queijo cheddar, bacon, picles, alface, tomate, muçarela, molho verde e molho especial. Acompanha uma porção de batata chips (aproximadamente 60gr).
+                            </p>
+
+                            <div class="price">
+                                R$ 44,90
+                            </div>
+
+                        </div>
+
+                    </article>
+                </a>
+
+
+                <a href="https://www.ifood.com.br/delivery/contagem-mg/sans-burguer-novo-progresso/b02c2a17-d339-4091-98d1-19aa1efa1d4a?prato=14508235-e76f-408c-8752-ca0495f75c2a" target="_blank"
+                    <article class="card">
+
+                        <img
+                            src="imagens/6burguer.jpg"
+                            alt="Nachos - Mid"
+                        >
+
+                        <div class="card-body">
+
+                            <h3>
+                                Nachos - Mid
+                            </h3>
+
+                            <p>
+                                Pão com gergelim, hambúrguer bovino sabor picanha de 120gr, nachos, queijo cheddar, bacon, mostarda, alface, tomate, Catupiry e molho verde e molho especial. Acompanha uma porção de batata chips (aproximadamente 60gr).
+                            </p>
+
+                            <div class="price">
+                                R$ 39,90
+                            </div>
+
+                        </div>
+
+                    </article>
+                </a>
+
+
+
+
+                <a href="https://www.ifood.com.br/delivery/contagem-mg/sans-burguer-novo-progresso/b02c2a17-d339-4091-98d1-19aa1efa1d4a?prato=c894be8a-bb8d-4cd0-9310-686e9dc5317f" target="_blank"
+                    <article class="card">
+
+                        <img
+                            src="imagens/7burguer.jpg"
+                            alt="Chicken - Small"
+                        >
+
+                        <div class="card-body">
+
+                            <h3>
+                                Chicken - Small
+                            </h3>
+
+                            <p>
+                                Pão com gergelim, hambúrguer de frango de 84gr, queijo cheddar, bacon, alface, tomate e barbecue e molho especial. Acompanha uma porção de batata chips (aproximadamente 60gr).
+                            </p>
+
+                            <div class="price">
+                                R$ 14,90
+                            </div>
+
+                        </div>
+
+                    </article>
+                </a>
+
+
+
+
+                <a href="https://www.ifood.com.br/delivery/contagem-mg/sans-burguer-novo-progresso/b02c2a17-d339-4091-98d1-19aa1efa1d4a?prato=e5cfaeca-91fc-4f61-92ec-44f0a63f2e70" target="_blank"
+                    <article class="card">
+
+                        <img
+                            src="imagens/8burguer.jpg"
+                            alt="Monster - Biggest"
+                        >
+
+                        <div class="card-body">
+
+                            <h3>
+                                Monster - Biggest
+                            </h3>
+
+                            <p>
+                                Pão com gergelim, hambúrguer de frango de 84gr, hambúrguer bovino sabor picanha de 120gr, queijo cheddar, bacon, ovo, alface, tomate, maionese, barbecue, molho verde e molho especial. Acompanha uma porção de batata chips (aproximadamente 60gr).
+                            </p>
+
+                            <div class="price">
+                                R$ 48,90
+                            </div>
+
+                        </div>
+
+                    </article>
+                </a>
+
+
+
+                <a href="https://www.ifood.com.br/delivery/contagem-mg/sans-burguer-novo-progresso/b02c2a17-d339-4091-98d1-19aa1efa1d4a?prato=07dcb343-e6c4-45c8-83c1-fbd8d3347076" target="_blank"
+                    <article class="card">
+
+                        <img
+                            src="imagens/9buruer.avif"
+                            alt="Cebola roxa - Mid"
+                        >
+
+                        <div class="card-body">
+
+                            <h3>
+                                Cebola roxa - Mid
+                            </h3>
+
+                            <p>
+                                Pão com gergelim, hambúrguer bovino sabor picanha de 120gr, queijo cheddar, bacon, alface, tomate, cebola roxa e molho especial. Acompanha uma porção de batata chips (aproximadamente 60gr).
+                            </p>
+
+                            <div class="price">
+                                R$ 38,90
+                            </div>
+
+                        </div>
+
+                    </article>
+                </a>
+
+
+
+                <a href="https://www.ifood.com.br/delivery/contagem-mg/sans-burguer-novo-progresso/b02c2a17-d339-4091-98d1-19aa1efa1d4a?prato=d07802dd-b12e-4d25-beae-ca8c052d58d8" target="_blank"
+                    <article class="card">
+
+                        <img
+                            src="imagens/10burguer.avif"
+                            alt="Burguer picanha - Mid"
+                        >
+
+                        <div class="card-body">
+
+                            <h3>
+                                Burguer picanha - Mid
+                            </h3>
+
+                            <p>
+                                Pão com gergelim, hambúrguer bovino sabor picanha de 120gr, queijo cheddar, bacon, alface, tomate, Catupiry, barbecue e molho especial. Acompanha uma porção de batata chips (aproximadamente 60gr).
+                            </p>
+
+                            <div class="price">
+                                R$ 29,90
+                            </div>
+
+                        </div>
+
+                    </article>
+                </a>
+
+
+
+
+                <a href="https://www.ifood.com.br/delivery/contagem-mg/sans-burguer-novo-progresso/b02c2a17-d339-4091-98d1-19aa1efa1d4a?prato=0bc3063e-7c33-4bb9-b95e-b633f1e05eeb" target="_blank"
+                    <article class="card">
+
+                        <img
+                            src="imagens/11burguer.jpg"
+                            alt="Jalapeno - Mid"
+                        >
+
+                        <div class="card-body">
+
+                            <h3>
+                                Jalapeno - Mid
+                            </h3>
+
+                            <p>
+                                Pão com gergelim, hambúrguer bovino sabor picanha de 120gr, queijo cheddar, bacon, alface, tomate, picles, barbecue, pimenta jalapeno e molho especial. Acompanha uma porção de batata chips (aproximadamente 60gr).
+                            </p>
+
+                            <div class="price">
+                                R$ 39,90
+                            </div>
+
+                        </div>
+
+                    </article>
+                </a>
+
+
+
+
+                <a href="https://www.ifood.com.br/delivery/contagem-mg/sans-burguer-novo-progresso/b02c2a17-d339-4091-98d1-19aa1efa1d4a?prato=a1822961-96a4-44ff-82df-a5a5c0b094e5" target="_blank"
+                    <article class="card">
+
+                        <img
+                            src="imagens/12burguer.jpg"
+                            alt="Supreme - Biggest"
+                        >
+
+                        <div class="card-body">
+
+                            <h3>
+                                Supreme - Biggest
+                            </h3>
+
+                            <p>
+                                Pão com gergelim, hambúrguer bovino de 90gr, hambúrguer bovino sabor picanha de 120gr, onions ring, cebola roxa, molho verde, queijo cheddar, bacon, maionese, alface, tomate, barbecue e molho especial. Acompanha uma porção de batata chips (aproximadamente 60gr).
+                            </p>
+
+                            <div class="price">
+                                R$ 49,90
+                            </div>
+
+                        </div>
+
+                    </article>
+                </a>
+
+
+
+
+                <a href="https://www.ifood.com.br/delivery/contagem-mg/sans-burguer-novo-progresso/b02c2a17-d339-4091-98d1-19aa1efa1d4a?prato=2f5f896d-f8c9-4a2a-8482-2f1e65c8fc44" href="https://www.ifood.com.br/delivery/contagem-mg/sans-burguer-novo-progresso/b02c2a17-d339-4091-98d1-19aa1efa1d4a?prato=2f5f896d-f8c9-4a2a-8482-2f1e65c8fc44" target="_blank"
+                    <article class="card">
+
+                        <img
+                            src="imagens/13burguer.avif"
+                            alt="Burguer bovino - Mid"
+                        >
+
+                        <div class="card-body">
+
+                            <h3>
+                                Burguer bovino - Mid
+                            </h3>
+
+                            <p>
+                                Pão com gergelim, hambúrguer bovino de 90gr, queijo cheddar, bacon, alface, tomate, Catupiry, barbecue e molho especial. Acompanha uma porção de batata chips (aproximadamente 60gr).
+                            </p>
+
+                            <div class="price">
+                                R$ 24,90
+                            </div>
+
+                        </div>
+
+                    </article>
+                </a>
+
+
+
+                <a href="https://www.ifood.com.br/delivery/contagem-mg/sans-burguer-novo-progresso/b02c2a17-d339-4091-98d1-19aa1efa1d4a?prato=788d80e8-5a32-48de-88cb-6e4e1055bc4a" target="_blank"
+                    <article class="card">
+
+                        <img
+                            src="imagens/14burguer.jpg"
+                            alt="Tabasco - Mid"
+                        >
+
+                        <div class="card-body">
+
+                            <h3>
+                                Tabasco - Mid
+                            </h3>
+
+                            <p>
+                                Pão com gergelim, hambúrguer bovino sabor picanha de 120gr, cebola roxa, queijo cheddar, bacon, maionese, alface, tomate, molho tabasco, barbecue e molho especial. Acompanha uma porção de batata chips (aproximadamente 60gr).
+                            </p>
+
+                            <div class="price">
+                                R$ 39,90
+                            </div>
+
+                        </div>
+
+                    </article>
+                </a>
+
+
+
+
+
+                <a href="https://www.ifood.com.br/delivery/contagem-mg/sans-burguer-novo-progresso/b02c2a17-d339-4091-98d1-19aa1efa1d4a?prato=c4665066-ff02-4600-80b7-685a839e1d64" target="_blank"
+                    <article class="card">
+
+                        <img
+                            src="imagens/15burguer.avif"
+                            alt="Burguer - Extra Small"
+                        >
+
+                        <div class="card-body">
+
+                            <h3>
+                                Burguer - Extra Small
+                            </h3>
+
+                            <p>
+                                Pão com gergelim, hambúrguer bovino 90gr, queijo cheddar, bacon, Catupiry, barbecue e molho especial. Acompanha uma porção de batata chips (aproximadamente 60gr).
+                            </p>
+
+                            <div class="price">
+                                R$ 14,90
+                            </div>
+
+                        </div>
+
+                    </article>
+                </a>
+
+
+
+
+
+
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================
+             SOBRE
+        ========================== -->
+
+        <section id="sobre">
+
+            <div class="container about">
+
+
+                <div class="about-img"></div>
+
+
+                <div>
+
+                    <small>
+                        CONHEÇA A SAN'S BURGUER
+                    </small>
+
+
+                    <h2>
+                        Feito para quem ama hambúrguer.
+                    </h2>
+
+
+                    <p>
+                        Hambúrguer artesanal preparado
+                        com carinho e ingredientes
+                        selecionados.
+                    </p>
+
+
+                    <p>
+                        Aqui você pode colocar a história
+                        da San's Burguer, os diferenciais
+                        da loja e outras informações.
+                    </p>
+
+
+                    <a
+                        href="https://www.ifood.com.br/delivery/contagem-mg/sans-burguer-novo-progresso/b02c2a17-d339-4091-98d1-19aa1efa1d4a" target="_blank"
+                        target="_blank"
+                        class="btn btn-yellow"
+                    >
+                        Quero pedir 
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================
+             LOCALIZAÇÃO
+        ========================== -->
+
+        <section
+            id="localizacao"
+            class="location"
+        >
+
+            <div class="container">
+
+
+                <div class="section-title">
+
+                    <small>
+                        ONDE ESTAMOS
+                    </small>
+
+                    <h2>
+                        Visite a San's Burguer
+                    </h2>
+
+                </div>
+
+
+                <div class="location-box">
+
+                    <h3>
+                        📍 Contagem - MG
+                    </h3>
+
+
+                    <p>
+
+                        Rua Cruzeiro do Sul, 698
+
+                        <br>
+
+                        Novo Progresso —
+                        Contagem/MG
+
+                    </p>
+
+
+                    <br>
+
+
+                    <a
+                        href="https://www.google.com/maps/search/?api=1&query=Rua+Cruzeiro+do+Sul+698+Novo+Progresso+Contagem+MG" target="_blank"
+                        target="_blank"
+                        class="btn btn-outline"
+                    >
+                        Como chegar
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================
+             CTA
+        ========================== -->
+
+        <section class="cta">
+
+            <div class="container">
+
+                <h2>
+                    Bateu aquela fome?
+                </h2>
+
+
+                <p>
+                    Faça seu pedido e aproveite.
+                </p>
+
+
+                <a
+                    href="https://www.ifood.com.br/delivery/contagem-mg/sans-burguer-novo-progresso/b02c2a17-d339-4091-98d1-19aa1efa1d4a" target="_blank"
+                    target="_blank"
+                    class="btn btn-yellow"
+                >
+                    PEDIR PELO IFOOD
+                </a>
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+
+    <!-- =========================
+         RODAPÉ
+    ========================== -->
+
+    <footer>
+
+        <strong>
+            San's Burguer
+        </strong>
+
+
+        <div class="social">
+
+            <a href="https://www.instagram.com/sansburguer_?stkn=MWdpYng5dTdodHM2Mw==">
+                Instagram
+            </a>
+
+            <a href="https://wa.me/553196462180">
+                WhatsApp
+            </a>
+
+        </div>
+
+
+        <p>
+            © 2026 San's Burguer.
+            Todos os direitos reservados.
+        </p>
+
+    </footer>
+
+
+
+    <!-- =========================
+         JAVASCRIPT DO MENU
+    ========================== -->
+
+    <script>
+
+        function toggleMenu() {
+
+            const nav =
+                document.getElementById("mainNav");
+
+            nav.classList.toggle("open");
+
+        }
+
+
+        /*
+            Fecha o menu do celular
+            depois que a pessoa clica
+            em alguma seção.
+        */
+
+        document
+            .querySelectorAll("#mainNav a")
+            .forEach(link => {
+
+                link.addEventListener("click", () => {
+
+                    document
+                        .getElementById("mainNav")
+                        .classList.remove("open");
+
+                });
+
+            });
+
+    </script>
+
+
+</body>
+
+</html>

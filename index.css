@@ -1,0 +1,662 @@
+ /* =========================
+           CORES DO SITE
+        ========================= */
+
+        :root {
+            --amarelo: #ffc400;
+            --amarelo-escuro: #e5a900;
+
+            --preto: #080808;
+            --preto-2: #111111;
+            --card: #1b1b1b;
+
+            --branco: #ffffff;
+            --cinza: #bdbdbd;
+        }
+
+
+        /* =========================
+           CONFIGURAÇÕES GERAIS
+        ========================= */
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            scroll-padding-top: 85px;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: var(--preto);
+            color: var(--branco);
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+
+        /* =========================
+           HEADER / MENU
+        ========================= */
+
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+
+            width: 100%;
+
+            z-index: 1000;
+
+            background: rgba(5, 5, 5, 0.95);
+
+            backdrop-filter: blur(10px);
+
+            border-bottom: 2px solid var(--amarelo);
+        }
+
+        .nav {
+            max-width: 1200px;
+
+            height: 80px;
+
+            margin: auto;
+
+            padding: 0 22px;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: space-between;
+        }
+
+
+        /* LOGO */
+
+        .logo {
+            width: 64px;
+            height: 64px;
+
+            object-fit: cover;
+
+            border-radius: 50%;
+
+            border: 2px solid var(--amarelo);
+        }
+
+
+        /* MENU */
+
+        nav {
+            display: flex;
+
+            align-items: center;
+
+            gap: 25px;
+        }
+
+        nav a {
+            color: white;
+
+            font-weight: 800;
+
+            transition: 0.25s;
+        }
+
+        nav a:hover {
+            color: var(--amarelo);
+        }
+
+
+        /* BOTÃO PEDIR */
+
+        .order {
+            background: var(--amarelo);
+
+            color: #080808 !important;
+
+            padding: 12px 18px;
+
+            border-radius: 9px;
+        }
+
+        .order:hover {
+            background: var(--amarelo-escuro);
+        }
+
+
+        /* MENU MOBILE */
+
+        .menu-toggle {
+            display: none;
+
+            background: transparent;
+
+            border: none;
+
+            color: var(--amarelo);
+
+            font-size: 30px;
+
+            cursor: pointer;
+        }
+
+
+        /* =========================
+           HERO
+        ========================= */
+
+        .hero {
+            min-height: 100vh;
+
+            padding-top: 80px;
+
+            display: flex;
+
+            align-items: center;
+
+            background:
+
+                linear-gradient(
+                    90deg,
+                    rgba(0, 0, 0, 0.97) 10%,
+                    rgba(0, 0, 0, 0.82) 48%,
+                    rgba(0, 0, 0, 0.35)
+                ),
+
+                url("imagens/burger1.jpg")
+
+                center / cover no-repeat;
+        }
+
+        .hero-inner {
+            max-width: 1200px;
+
+            width: 100%;
+
+            margin: auto;
+
+            padding: 80px 22px;
+        }
+
+
+        /* PEQUENA ETIQUETA */
+
+        .badge {
+            display: inline-block;
+
+            background: var(--amarelo);
+
+            color: #080808;
+
+            font-weight: 900;
+
+            padding: 8px 14px;
+
+            border-radius: 999px;
+
+            margin-bottom: 18px;
+        }
+
+
+        /* TÍTULO */
+
+        h1 {
+            font-size: clamp(46px, 7vw, 82px);
+
+            line-height: 0.92;
+
+            text-transform: uppercase;
+
+            max-width: 720px;
+        }
+
+        h1 span {
+            color: var(--amarelo);
+        }
+
+        .hero p {
+            max-width: 560px;
+
+            color: #ddd;
+
+            font-size: 18px;
+
+            line-height: 1.65;
+
+            margin: 24px 0 28px;
+        }
+
+
+        /* BOTÕES */
+
+        .buttons {
+            display: flex;
+
+            gap: 12px;
+
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            display: inline-block;
+
+            font-weight: 900;
+
+            padding: 15px 22px;
+
+            border-radius: 9px;
+
+            transition: 0.25s;
+        }
+
+        .btn-yellow {
+            background: var(--amarelo);
+
+            color: #080808;
+        }
+
+        .btn-yellow:hover {
+            background: var(--amarelo-escuro);
+
+            transform: translateY(-2px);
+        }
+
+        .btn-outline {
+            border: 1px solid #777;
+
+            color: white;
+        }
+
+        .btn-outline:hover {
+            border-color: var(--amarelo);
+
+            color: var(--amarelo);
+        }
+
+
+        /* =========================
+           SEÇÕES
+        ========================= */
+
+        section {
+            padding: 92px 22px;
+        }
+
+        .container {
+            max-width: 1150px;
+
+            margin: auto;
+        }
+
+        .section-title {
+            text-align: center;
+
+            margin-bottom: 42px;
+        }
+
+        .section-title small {
+            color: var(--amarelo);
+
+            font-weight: 900;
+
+            letter-spacing: 1px;
+        }
+
+        .section-title h2 {
+            font-size: 42px;
+
+            margin-top: 8px;
+        }
+
+
+        /* =========================
+           CARDÁPIO
+        ========================= */
+
+        #cardapio {
+            background: var(--preto-2);
+        }
+
+        .menu-grid {
+            display: grid;
+
+            grid-template-columns: repeat(3, 1fr);
+
+            gap: 22px;
+        }
+
+
+        /* CARD DO HAMBÚRGUER */
+
+        .card {
+            background: var(--card);
+
+            border: 1px solid #303030;
+
+            border-radius: 15px;
+
+            overflow: hidden;
+
+            transition: 0.25s;
+        }
+
+        .card:hover {
+            transform: translateY(-6px);
+
+            border-color: var(--amarelo);
+        }
+
+
+        /* FOTO */
+
+        .card img {
+            width: 100%;
+
+            height: 225px;
+
+            object-fit: cover;
+
+            display: block;
+        }
+
+
+        .card-body {
+            padding: 20px;
+        }
+
+        .card h3 {
+            font-size: 22px;
+
+            margin-bottom: 9px;
+        }
+
+        .card p {
+            color: var(--cinza);
+
+            line-height: 1.5;
+
+            min-height: 66px;
+
+            font-size: 14px;
+        }
+
+        .price {
+            color: var(--amarelo);
+
+            font-size: 21px;
+
+            font-weight: 900;
+
+            margin-top: 16px;
+        }
+
+
+        /* =========================
+           SOBRE
+        ========================= */
+
+        .about {
+            display: grid;
+
+            grid-template-columns: 1fr 1fr;
+
+            gap: 55px;
+
+            align-items: center;
+        }
+
+        .about-img {
+            height: 430px;
+
+            border-radius: 18px;
+
+            background:
+
+                url("imagens/burger2.jpg")
+
+                center / cover;
+        }
+
+        .about small {
+            color: var(--amarelo);
+
+            font-weight: 900;
+        }
+
+        .about h2 {
+            font-size: 42px;
+
+            margin: 10px 0 18px;
+        }
+
+        .about p {
+            color: #bbb;
+
+            line-height: 1.8;
+
+            margin-bottom: 13px;
+        }
+
+
+        /* =========================
+           LOCALIZAÇÃO
+        ========================= */
+
+        .location {
+            background: #171717;
+
+            text-align: center;
+        }
+
+        .location-box {
+            max-width: 700px;
+
+            margin: auto;
+
+            background: #222;
+
+            border-radius: 16px;
+
+            padding: 34px;
+
+            border-top: 4px solid var(--amarelo);
+        }
+
+        .location-box h3 {
+            font-size: 25px;
+
+            margin-bottom: 10px;
+        }
+
+        .location-box p {
+            color: #bbb;
+
+            line-height: 1.7;
+        }
+
+
+        /* =========================
+           CTA FINAL
+        ========================= */
+
+        .cta {
+            text-align: center;
+
+            background:
+
+                linear-gradient(
+                    rgba(0,0,0,.78),
+                    rgba(0,0,0,.93)
+                ),
+
+                url("imagens/burger3.jpg")
+
+                center / cover;
+        }
+
+        .cta h2 {
+            font-size: 45px;
+
+            margin-bottom: 12px;
+        }
+
+        .cta p {
+            color: #ccc;
+
+            margin-bottom: 24px;
+        }
+
+
+        /* =========================
+           RODAPÉ
+        ========================= */
+
+        footer {
+            background: #050505;
+
+            text-align: center;
+
+            padding: 35px 20px;
+
+            color: #777;
+        }
+
+        footer strong {
+            color: var(--amarelo);
+        }
+
+        .social {
+            margin: 15px 0;
+        }
+
+        .social a {
+            color: white;
+
+            margin: 0 9px;
+        }
+
+        .social a:hover {
+            color: var(--amarelo);
+        }
+        a {
+            color: yellow;
+        }
+
+        /* =========================
+           CELULAR
+        ========================= */
+
+        @media(max-width: 820px) {
+
+            .menu-toggle {
+                display: block;
+            }
+
+            nav {
+                display: none;
+
+                position: absolute;
+
+                top: 80px;
+
+                left: 0;
+
+                width: 100%;
+
+                background: #0c0c0c;
+
+                border-bottom: 2px solid var(--amarelo);
+
+                padding: 12px 22px;
+
+                flex-direction: column;
+
+                align-items: stretch;
+
+                gap: 0;
+            }
+
+            nav.open {
+                display: flex;
+            }
+
+            nav a {
+                padding: 15px 8px;
+
+                border-bottom: 1px solid #292929;
+            }
+
+            nav .order {
+                text-align: center;
+
+                border-bottom: 0;
+
+                margin-top: 8px;
+            }
+
+            .logo {
+                width: 57px;
+                height: 57px;
+            }
+
+            .hero {
+                background:
+
+                    linear-gradient(
+                        rgba(0,0,0,.78),
+                        rgba(0,0,0,.94)
+                    ),
+
+                    url("imagens/burger1.jpg")
+
+                    center / cover;
+            }
+
+            .hero-inner {
+                text-align: center;
+            }
+
+            .hero p {
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .buttons {
+                justify-content: center;
+            }
+
+            .menu-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .about {
+                grid-template-columns: 1fr;
+
+                gap: 30px;
+            }
+
+            .about-img {
+                height: 300px;
+
+                order: 2;
+            }
+
+            .section-title h2,
+            .about h2 {
+                font-size: 34px;
+            }
+
+            .cta h2 {
+                font-size: 35px;
+            }
+        }
+
+        
